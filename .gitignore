@@ -1,0 +1,19 @@
+# Resumes: never published
+*.pdf
+
+# Test screenshots
+screenshots/
+
+# Local tooling and working files (not part of the site)
+.claude/
+.agents/
+.playwright/
+.playwright-cli/
+.taste-skill/
+skills-lock.json
+DESIGN.md
+
+# OS clutter
+Thumbs.db
+desktop.ini
+.DS_Store

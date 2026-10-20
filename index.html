@@ -1,0 +1,403 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; img-src 'self' data:; media-src 'self'; connect-src 'self'; object-src 'none'; base-uri 'self'; form-action 'none'">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
+  <title>Advith Rai, Cybersecurity Student | Full Stack Developer</title>
+  <meta name="description" content="Advith Rai is a final-year cybersecurity student at NMAM Institute of Technology and a full stack developer from Puttur, Karnataka.">
+  <meta name="color-scheme" content="dark">
+  <meta name="theme-color" content="#010102">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap">
+  <link rel="stylesheet" href="styles.css">
+  <script src="main.js"></script>
+</head>
+<body>
+
+<a class="skip-link" href="#main">Skip to content</a>
+
+<header class="top" id="top">
+  <a class="wordmark" href="#top" translate="no">Advith Rai</a>
+  <nav class="top-links" aria-label="Sections">
+    <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="top-menu">Menu</button>
+    <ul id="top-menu">
+      <li><a href="#work">Work</a></li>
+      <li><a href="#audit">Audit</a></li>
+      <li><a href="#about">About</a></li>
+    </ul>
+  </nav>
+  <a class="btn btn-primary top-action" href="#contact">Email me</a>
+</header>
+
+<main id="main" tabindex="-1">
+
+  <!-- Hero: void above, statement hanging from the 42% axis -->
+  <section class="hero" aria-labelledby="hero-title">
+    <p class="hero-note"><a href="#audit">This page audits its own security as you read. <span id="hero-pass">12 layers, checked in your browser.</span></a></p>
+    <h1 class="hero-title lines" id="hero-title">
+      <span class="line"><span data-line>I build the web</span></span>
+      <span class="line"><span data-line>and break it.</span></span>
+    </h1>
+    <div class="hero-foot">
+      <p class="hero-lead">I’m Advith Rai, a cybersecurity student and full stack developer from Puttur, Karnataka, in my final year of B.Tech in Cyber Security at NMAM Institute of Technology.</p>
+      <div class="hero-actions">
+        <a class="btn btn-primary" href="#contact">Get in touch</a>
+        <a class="btn btn-secondary" href="#work">See the work</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- The live thing: the page audits itself, layer by layer, like a tiled roof -->
+  <section class="audit" id="audit" aria-labelledby="audit-title">
+    <div class="audit-copy" data-reveal>
+      <h2 class="head" id="audit-title">This page, audited while you read</h2>
+      <p>On the coast here, a roof is clay tiles laid in rows, each one covering the joint of the one below it. No single tile has to be perfect, because the next one catches what it lets through.</p>
+      <p>Security works the same way, in layers. The panel runs real checks against this page, in your browser, right now. Nothing is sent anywhere.</p>
+      <figure class="audit-photo">
+        <img src="assets/mangalore-tiles-closeup-view.jpg" width="1400" height="1050" loading="lazy" alt="Close view of overlapping red clay Mangalore tiles on a roof.">
+        <figcaption>Mangalore tiles: every row overlaps the joints of the row beneath.</figcaption>
+      </figure>
+    </div>
+
+    <div class="audit-panel" data-ui data-reveal>
+      <div class="ui-bar">
+        <span class="ui-title">Audit of this page</span>
+        <span class="ui-meta" id="audit-url">index.html</span>
+      </div>
+      <div class="ui-summary">
+        <p class="ui-score" aria-live="polite"><span id="audit-pass">–</span> of <span id="audit-total">–</span> layers holding</p>
+        <dl class="ui-stats">
+          <div><dt>Page weight</dt><dd id="audit-weight">Measuring…</dd></div>
+          <div><dt>Ready in</dt><dd id="audit-time">Measuring…</dd></div>
+          <div><dt>Requests</dt><dd id="audit-requests">Measuring…</dd></div>
+        </dl>
+      </div>
+      <ul class="ui-checks" id="audit-checks">
+        <li class="ui-check"><span class="ui-name">Checks run when the page has loaded.</span><span class="ui-detail">Without JavaScript there is nothing to measure, and nothing else on the page depends on it.</span></li>
+      </ul>
+      <div class="ui-foot">
+        <button class="ui-btn" type="button" id="audit-rerun">Run again</button>
+        <span>Measured in your browser. Results differ per visit.</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- Work: small index, large picture (pinned on desktop) -->
+  <section class="work" id="work" aria-labelledby="work-title">
+    <div class="work-stage">
+      <div class="work-side">
+        <h2 class="head work-title" id="work-title">Selected work</h2>
+        <div class="work-now" aria-live="polite">
+          <p class="display work-now-name">Log File Security</p>
+          <p class="work-now-text">Protects system logs with AES, RSA and chain hashing.</p>
+          <p class="work-now-link"></p>
+        </div>
+        <ol class="work-index" aria-label="Projects">
+          <li><button type="button" data-go="0" aria-current="true"><span class="wi-name">Log File Security</span><span class="wi-kind">IEEE Xplore 2026</span></button></li>
+          <li><button type="button" data-go="1"><span class="wi-name">Malicious VPN + SIEM</span><span class="wi-kind">Security lab</span></button></li>
+          <li><button type="button" data-go="2"><span class="wi-name">Firewall Rule Drift</span><span class="wi-kind">Security, ML</span></button></li>
+          <li><button type="button" data-go="3"><span class="wi-name">Secure E-Voting</span><span class="wi-kind">Full stack, MERN</span></button></li>
+          <li><button type="button" data-go="4"><span class="wi-name">Mangalore Store</span><span class="wi-kind">Full stack, e-commerce</span></button></li>
+        </ol>
+      </div>
+
+      <div class="work-frames">
+
+        <article class="project" data-project="0">
+          <div class="project-text">
+            <h3 class="project-name">Log File Security</h3>
+            <p>Protects system log files with AES encryption, RSA and chain hashing, so any change to an entry breaks the chain. Cron jobs and an IDS-based approach automate the monitoring and flag suspicious activity. Python, AES, RSA, Cron.</p>
+            <p class="project-link"><a href="https://ieeexplore.ieee.org/document/11465975" target="_blank" rel="noopener noreferrer">Published in IEEE Xplore, 2026</a></p>
+          </div>
+          <div class="frame">
+            <div class="app" data-ui>
+              <div class="app-top"><span class="app-name">Log File Security</span><span class="app-tab is-on">Chain</span><span class="app-tab">Alerts</span><span class="app-sample">Illustration</span></div>
+              <div class="app-body lf">
+                <p class="lf-alert">IDS alert: entry 0414 was changed after it was chained.</p>
+                <table>
+                  <thead><tr><th>Entry</th><th>Source</th><th>Previous hash</th><th>Status</th></tr></thead>
+                  <tbody>
+                    <tr><td>0411</td><td>auth.log</td><td>7c1e…a9</td><td><span class="dot ok"></span>Verified</td></tr>
+                    <tr><td>0412</td><td>syslog</td><td>2b90…4f</td><td><span class="dot ok"></span>Verified</td></tr>
+                    <tr><td>0413</td><td>auth.log</td><td>e5d2…13</td><td><span class="dot ok"></span>Verified</td></tr>
+                    <tr><td>0414</td><td>auth.log</td><td>91aa…c0</td><td><span class="dot bad"></span>Altered</td></tr>
+                    <tr><td>0415</td><td>kern.log</td><td>no match</td><td><span class="dot bad"></span>Chain broken</td></tr>
+                  </tbody>
+                </table>
+                <dl class="lf-keys">
+                  <div><dt>At rest</dt><dd>AES-encrypted entries</dd></div>
+                  <div><dt>Keys</dt><dd>RSA</dd></div>
+                  <div><dt>Integrity</dt><dd>Chain hashing, checked by Cron</dd></div>
+                </dl>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <article class="project" data-project="1">
+          <div class="project-text">
+            <h3 class="project-name">Malicious VPN + Wazuh SIEM</h3>
+            <p>A 3-VM lab that plays a malicious VPN provider: a WireGuard tunnel whose operator captures DNS queries, traffic metadata and connection logs with tcpdump and iptables. Wazuh agents on Windows and Linux detected every simulated attack.</p>
+          </div>
+          <div class="frame">
+            <div class="app" data-ui>
+              <div class="app-top"><span class="app-name">Wazuh</span><span class="app-tab is-on">Security events</span><span class="app-tab">Agents</span><span class="app-sample">Lab illustration</span></div>
+              <div class="app-body wz">
+                <div class="wz-head">
+                  <p class="wz-figure">4 of 4 simulated attacks detected</p>
+                  <p class="wz-sub">3 VMs, one WireGuard tunnel, agents on Windows and Linux</p>
+                </div>
+                <table>
+                  <thead><tr><th>Agent</th><th>Description</th><th>Level</th></tr></thead>
+                  <tbody>
+                    <tr><td>linux-client</td><td>sshd: brute force trying to get access to the system</td><td>10</td></tr>
+                    <tr><td>windows-client</td><td>Integrity checksum changed</td><td>7</td></tr>
+                    <tr><td>vpn-gateway</td><td>DNS queries logged on the VPN gateway</td><td>8</td></tr>
+                    <tr><td>linux-client</td><td>Multiple connection attempts: possible port scan</td><td>10</td></tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <article class="project" data-project="2">
+          <div class="project-text">
+            <h3 class="project-name">Firewall Rule Drift ML</h3>
+            <p>5 models trained on the UNSW-NB15 dataset (175,341 records), then tested against 294,898 packets captured live with Wireshark. The tuned Random Forest reached 96.06% accuracy, and SHAP showed TTL as the most influential feature.</p>
+          </div>
+          <div class="frame">
+            <div class="app" data-ui>
+              <div class="app-top"><span class="app-name">Rule Drift</span><span class="app-tab is-on">Results</span><span class="app-tab">Live capture</span><span class="app-sample">Project results</span></div>
+              <div class="app-body ml">
+                <p class="ml-model">Random Forest, tuned</p>
+                <p class="ml-big">96.06%<span>accuracy</span></p>
+                <dl class="ml-stats">
+                  <div><dt>AUC</dt><dd>0.9938</dd></div>
+                  <div><dt>Models compared</dt><dd>5</dd></div>
+                  <div><dt>Training records</dt><dd>175,341</dd></div>
+                  <div><dt>Live packets</dt><dd>294,898</dd></div>
+                </dl>
+                <p class="ml-shap"><span>Most influential feature (SHAP)</span><strong>TTL</strong></p>
+                <ol class="ml-steps">
+                  <li><span>Dataset</span><span>UNSW-NB15, 175,341 records</span></li>
+                  <li><span>Train</span><span>5 models, scikit-learn and XGBoost</span></li>
+                  <li><span>Tune and pick</span><span>Random Forest: 96.06% accuracy, AUC 0.9938</span></li>
+                  <li><span>Live test</span><span>294,898 packets, Wireshark on Windows 11</span></li>
+                  <li><span>Explain</span><span>SHAP ranks TTL first</span></li>
+                </ol>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <article class="project" data-project="3">
+          <div class="project-text">
+            <h3 class="project-name">Secure E-Voting</h3>
+            <p>A web e-voting system for college elections on the MERN stack. OTP-based authentication verifies each voter and keeps out unauthorised access; dashboards show the vote and manage the election in real time.</p>
+          </div>
+          <div class="frame">
+            <div class="app" data-ui>
+              <div class="app-top"><span class="app-name">E-Voting</span><span class="app-tab is-on">Verify</span><span class="app-tab">Dashboard</span><span class="app-sample">Illustration</span></div>
+              <div class="app-body ev">
+                <div class="ev-otp">
+                  <p class="ev-title">Verify it’s you</p>
+                  <p class="ev-sub">Enter the 6-digit one-time code to open your ballot.</p>
+                  <div class="ev-boxes" aria-hidden="true"><span>4</span><span>8</span><span>1</span><span>0</span><span class="is-on"></span><span></span></div>
+                </div>
+                <div class="ev-tally">
+                  <p class="ev-title">Live turnout</p>
+                  <ul>
+                    <li><span>Candidate A</span><span class="ev-bar"><span class="w-48"></span></span><span>48%</span></li>
+                    <li><span>Candidate B</span><span class="ev-bar"><span class="w-37"></span></span><span>37%</span></li>
+                    <li><span>Candidate C</span><span class="ev-bar"><span class="w-15"></span></span><span>15%</span></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <article class="project" data-project="4">
+          <div class="project-text">
+            <h3 class="project-name">Mangalore Store</h3>
+            <p>A full-stack shop for groceries, spices and snacks: search, filters, variants, wishlist, cart, coupons, addresses and order tracking, with Razorpay payments and a role-based admin dashboard. Next.js, React, PostgreSQL, Prisma.</p>
+          </div>
+          <div class="frame">
+            <div class="app" data-ui>
+              <div class="app-top"><span class="app-name">Mangalore Store</span><span class="app-url">Search spices, snacks, groceries</span><span class="app-sample">Illustration</span></div>
+              <div class="app-body ms">
+                <ul class="ms-list">
+                  <li><span class="ms-k">Byadgi chilli</span><span class="ms-v">250&nbsp;g</span><span class="ms-p">₹&nbsp;140</span><span class="ms-add">Add</span></li>
+                  <li><span class="ms-k">Kori rotti</span><span class="ms-v">200&nbsp;g</span><span class="ms-p">₹&nbsp;90</span><span class="ms-add">Add</span></li>
+                  <li><span class="ms-k">Kokum</span><span class="ms-v">100&nbsp;g</span><span class="ms-p">₹&nbsp;75</span><span class="ms-add is-on">In cart</span></li>
+                  <li><span class="ms-k">Banana chips</span><span class="ms-v">400&nbsp;g</span><span class="ms-p">₹&nbsp;160</span><span class="ms-add">Add</span></li>
+                  <li><span class="ms-k">Neer dosa mix</span><span class="ms-v">500&nbsp;g</span><span class="ms-p">₹&nbsp;85</span><span class="ms-add">Add</span></li>
+                  <li><span class="ms-k">Kundapur masala</span><span class="ms-v">200&nbsp;g</span><span class="ms-p">₹&nbsp;120</span><span class="ms-add is-on">In cart</span></li>
+                  <li><span class="ms-k">Jackfruit papad</span><span class="ms-v">250&nbsp;g</span><span class="ms-p">₹&nbsp;110</span><span class="ms-add">Add</span></li>
+                  <li><span class="ms-k">Cashew W240</span><span class="ms-v">250&nbsp;g</span><span class="ms-p">₹&nbsp;280</span><span class="ms-add">Add</span></li>
+                </ul>
+                <div class="ms-cart">
+                  <p><span>Coupon</span><span>FIRSTORDER applied</span></p>
+                  <p class="ms-total"><span>Total, 2 items</span><span>₹&nbsp;175</span></p>
+                  <span class="ms-pay">Pay with Razorpay</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <figure class="band band-video">
+    <video id="rain-film" src="assets/monsoon-rain-in-kerala-20230928-134308.webm" poster="assets/monsoon-rain-in-kerala-20230928-134308-poster.jpg" width="1400" height="788" muted loop playsinline autoplay preload="metadata" aria-label="Monsoon rain falling on a tiled roof among coconut and areca palms."></video>
+    <figcaption>Monsoon rain on a tiled roof, on the same coast in Kerala. From June to September the roof is tested every day. <button class="band-toggle" type="button" aria-controls="rain-film" aria-pressed="false">Pause film</button></figcaption>
+  </figure>
+
+  <!-- What I do: one item per poster line -->
+  <section class="poster" aria-labelledby="poster-title">
+    <h2 class="head" id="poster-title">What I do</h2>
+    <ul class="poster-list">
+      <li><span class="pl-item">full stack</span><span class="pl-fact">React, Next.js, Node.js, Express</span></li>
+      <li><span class="pl-item">web security</span><span class="pl-fact">OTP auth, role-based access</span></li>
+      <li><span class="pl-item">networks</span><span class="pl-fact">Wireshark, WireGuard, tcpdump</span></li>
+      <li><span class="pl-item">detection</span><span class="pl-fact">Wazuh SIEM, IDS, ML models</span></li>
+      <li><span class="pl-item">cryptography</span><span class="pl-fact">AES, RSA, chain hashing</span></li>
+    </ul>
+  </section>
+
+  <!-- About: side facts, wide paragraph, record, and the place -->
+  <section class="about" id="about" aria-labelledby="about-title">
+    <h2 class="head about-title" id="about-title">About, from Puttur</h2>
+    <div class="about-row">
+      <dl class="facts" data-reveal>
+        <div><dt>Based in</dt><dd>Puttur, Dakshina Kannada</dd></div>
+        <div><dt>Studying</dt><dd>B.Tech, Cyber Security, 2023 to 2027</dd></div>
+        <div><dt>Focus</dt><dd>Cybersecurity and full stack development</dd></div>
+      </dl>
+      <p class="about-text" data-reveal>I’m a final-year cybersecurity student with hands-on work in networking, Linux, cryptography and secure software development. I build full-stack web apps and security projects side by side, so what I learn breaking things goes straight into how I build them.</p>
+    </div>
+
+    <div class="about-row entry" data-reveal>
+      <h3 class="record-word">Experience</h3>
+      <div class="entry-body">
+        <h4 class="entry-title">AdxFire Media LLP</h4>
+        <p class="entry-meta">Full Stack Web Development (MERN) Intern · Remote · May to July 2026</p>
+        <ul class="entry-points">
+          <li>Built and maintained web applications with React.js, Node.js, Express.js and MongoDB.</li>
+          <li>Built responsive front-end interfaces, and RESTful APIs and backend functionality behind them.</li>
+          <li>Designed and integrated MongoDB databases for efficient application data management.</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="about-row entry" data-reveal>
+      <h3 class="record-word">Education</h3>
+      <div class="entry-body">
+        <h4 class="entry-title">NMAM Institute of Technology</h4>
+        <p class="entry-meta">B.Tech in Computer Science and Engineering (Cyber Security) · Nitte, Karnataka · 2023 to 2027</p>
+      </div>
+    </div>
+
+    <div class="about-row record" data-reveal>
+      <h3 class="record-word">Certifications</h3>
+      <ul class="record-list">
+        <li><span>Pre-Security Path</span><span>TryHackMe</span></li>
+        <li><span>AI Innovation Certificate</span><span>Microsoft</span></li>
+        <li><span>Hedera Hashgraph Certificate</span><span>Hedera</span></li>
+      </ul>
+      <ul class="record-list">
+        <li><span>Duckerz CTF</span><span>2026</span></li>
+        <li><span>PsychCTF</span><span>2026</span></li>
+      </ul>
+    </div>
+
+    <div class="about-row record" data-reveal>
+      <h3 class="record-word">Skills</h3>
+      <ul class="record-list">
+        <li><span>Python</span><span>language</span></li>
+        <li><span>React.js and Next.js</span><span>web</span></li>
+        <li><span>Node.js and Express.js</span><span>web</span></li>
+        <li><span>PostgreSQL</span><span>database</span></li>
+        <li><span>MongoDB</span><span>database</span></li>
+        <li><span>Git and GitHub</span><span>tools</span></li>
+      </ul>
+      <ul class="record-list">
+        <li><span>Computer networking</span><span>security</span></li>
+        <li><span>Web and network security</span><span>security</span></li>
+        <li><span>Cryptography</span><span>security</span></li>
+        <li><span>Linux</span><span>security</span></li>
+        <li><span>Wireshark and Wazuh</span><span>tools</span></li>
+        <li><span>VirtualBox</span><span>tools</span></li>
+      </ul>
+    </div>
+
+    <div class="place">
+      <figure class="place-a" data-reveal>
+        <img src="assets/puttur-mahalingeshwara-temple.jpg" width="1050" height="1400" loading="lazy" alt="The Mahalingeshwara temple in Puttur under a grey monsoon sky, its tiled roofs wet with rain.">
+        <figcaption>Mahalingeshwara temple, Puttur, after rain.</figcaption>
+      </figure>
+      <figure class="place-b" data-reveal>
+        <img src="assets/dakshina-kannada-district-during-monsoon-season.jpg" width="1400" height="1050" loading="lazy" alt="Bright green paddy fields edged by coconut palms in rural Dakshina Kannada during the monsoon.">
+        <figcaption>Paddy and coconut palms in Dakshina Kannada, July.</figcaption>
+      </figure>
+      <figure class="place-c" data-reveal>
+        <img src="assets/areca-paddy-mist-balamuri-coorg-feb24-a7c.jpg" width="1400" height="933" loading="lazy" alt="Tall, slender areca palms rising out of morning mist beside a field.">
+        <figcaption>Areca palms in morning mist, Kodagu, just over the ghats.</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <figure class="band band-photo">
+    <img src="assets/puttur-bedi-mahalingeshwara-temple.jpg" width="1400" height="940" loading="lazy" alt="Orange and gold fireworks bursting against a black night sky.">
+    <figcaption>Puttur Bedi, the fireworks night of the Mahalingeshwara temple festival.</figcaption>
+  </figure>
+
+  <!-- Contact: the email as display type, inverse field -->
+  <section class="contact" id="contact" aria-labelledby="contact-title">
+    <p class="contact-ask">Hiring for security or full stack work? Write to me.</p>
+    <h2 class="contact-mail" id="contact-title"><a href="mailto:advithrai75@gmail.com?subject=Hello%20Advith">advithrai75@<br class="mail-break">gmail.com</a></h2>
+    <div class="contact-foot">
+      <p>Puttur, Karnataka. It is <time id="puttur-time">IST</time> here.</p>
+      <p><a href="https://github.com/Advithrai" target="_blank" rel="noopener noreferrer">GitHub</a><a href="https://www.linkedin.com/in/advith-rai-414021321/" target="_blank" rel="noopener noreferrer">LinkedIn</a><a href="#top">Back to top</a></p>
+    </div>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <p class="footer-name" aria-hidden="true" translate="no">Advith Rai</p>
+  <div class="footer-row">
+    <ul class="footer-places">
+      <li><a href="mailto:advithrai75@gmail.com">Email</a></li>
+      <li><a href="https://github.com/Advithrai" target="_blank" rel="noopener noreferrer">GitHub</a></li>
+      <li><a href="https://www.linkedin.com/in/advith-rai-414021321/" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+    </ul>
+    <div class="footer-cols">
+      <ul>
+        <li><a href="#work">Work</a></li>
+        <li><a href="#audit">Audit</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <ul>
+        <li>Hand-written HTML, CSS and JavaScript</li>
+        <li>No cookies, no trackers</li>
+        <li>No third-party scripts</li>
+      </ul>
+      <p class="credits">Pictures and footage: <a href="https://commons.wikimedia.org/wiki/File:Mangalore_tiles_closeup_view.jpg" target="_blank" rel="noopener noreferrer">“Mangalore tiles closeup view”</a> by SnapMeUp, CC BY-SA 4.0; <a href="https://commons.wikimedia.org/wiki/File:Monsoon_Rain_in_Kerala_20230928_134308.ogg" target="_blank" rel="noopener noreferrer">“Monsoon Rain in Kerala”</a> by Ramesh Kunnappully, CC BY-SA 4.0; <a href="https://commons.wikimedia.org/wiki/File:Puttur_Mahalingeshwara_Temple.jpg" target="_blank" rel="noopener noreferrer">“Puttur Mahalingeshwara Temple”</a> by Maneesha Shetty, CC BY-SA 4.0; <a href="https://commons.wikimedia.org/wiki/File:Dakshina_Kannada_district_during_monsoon_season.jpg" target="_blank" rel="noopener noreferrer">“Dakshina Kannada district during monsoon season”</a> by Rajaramraok, CC BY-SA 3.0; <a href="https://commons.wikimedia.org/wiki/File:Areca_Paddy_Mist_Balamuri_Coorg_Feb24_A7C_09428.jpg" target="_blank" rel="noopener noreferrer">“Areca Paddy Mist Balamuri Coorg”</a> by Timothy A. Gonsalves, CC BY-SA 4.0; <a href="https://commons.wikimedia.org/wiki/File:Puttur_Bedi_,_Mahalingeshwara_Temple.jpg" target="_blank" rel="noopener noreferrer">“Puttur Bedi, Mahalingeshwara Temple”</a> by Bharathesha Alasandemajalu, CC BY-SA 4.0. All via Wikimedia Commons.</p>
+    </div>
+  </div>
+  <div class="footer-legal">
+    <p>© 2026 Advith Rai</p>
+    <a href="#top">Back to top</a>
+  </div>
+</footer>
+
+</body>
+</html>
